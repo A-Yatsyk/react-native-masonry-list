@@ -233,7 +233,7 @@ export default class MasonryList extends React.Component<Props, State> {
     }
 
     const content = (
-      <View style={styles.contentContainer}>
+      <View style={[styles.contentContainer, props.columnWrapperStyle]}>
         {this.state.columns.map(col =>
           <VirtualizedList
             {...props}
